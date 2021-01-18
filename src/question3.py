@@ -1,4 +1,3 @@
-from collections import Counter
 with open("input\warning.txt","r") as f1, open("input\connexion.log","r") as f2, open("output/suspect.txt","w") as f3:
     ip_danger=[]
     occurence=[]

@@ -1,5 +1,9 @@
-with open("input\connexion.log","r") as fichier1, open("utilisateurs.txt","w") as fichier2:
-    for ligne in fichier1:
+with open("input\connexion.log","r") as f1, open("output/utilisateurs.txt","w") as f2:
+    #utilisateurbis=[]
+    for ligne in f1:
         ligne=ligne.split(";")
-        print(ligne[1])
-        #fichier2.write("%s\n" % ligne[1])
+        #print(ligne)
+        #print(ligne[1])
+        #utilisateurbis.append(ligne[1])
+        #print(utilisateurbis)
+        f2.write("%s\n" % ligne[1])
